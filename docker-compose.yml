@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+
+  nginx_app:
+    image: nginx:alpine
+    ports:
+      - 80:80
+    networks:
+      - app_network
+  
+    
+networks:
+  app_network:
